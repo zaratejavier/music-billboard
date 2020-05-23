@@ -13,4 +13,24 @@
  *= require_tree .
  *= require_self
  */
- @import "semantic-ui";
+//  @import "semantic-ui";
+
+ul, li{
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  // list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  // border: 1px solid gray;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+li:hover{
+  color: white;
+  background-color:grey;
+}
