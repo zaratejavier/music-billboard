@@ -1,2 +1,16 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+
+
+<h1><%= @artist.full_name %></h1>
+<hr />
+<h2>Songs</h2>
+<ul>
+  <% @artist.songs.each do |song| %>
+    <li>
+      <%= link_to song.name, song %>
+    </li>
+  <% end %>
+</ul>
+<br />
+<br />
+<br />
+<%= link_to 'Delete Artist', @artist, method: :delete, class: "ui red button inverted" %>
