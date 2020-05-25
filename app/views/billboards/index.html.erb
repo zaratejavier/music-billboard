@@ -8,8 +8,8 @@
     <li>
       <%= us.artist.full_name %>
       <br />
-      <%= link_to 'Remove', song_billboard_path(@song, us), method: :delete %>
     </li>
+    <%= link_to 'Remove', song_billboard_path(@song, us), method: :delete %>
   <% end %>
 </ul>
 
@@ -19,7 +19,7 @@
     <li>
       <%= euro.artist.full_name %>
       <br />
-      <%= link_to 'Remove', song_billboard_path(@song, euro), method: :delete %>
     </li>
+      <%= link_to 'Remove', song_billboard_path(@song, euro), method: :delete %>
  <% end %>
 </ul>

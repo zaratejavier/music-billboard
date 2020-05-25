@@ -8,6 +8,23 @@
 
  tops = ['us_100', 'euro_100']
 
- 10.times do 
-  song = Song.create(name: '')
+ 30.times do 
+  song = Song.create(name: Faker::Music.album)
+  
+
+  10.times do 
+    artist = Artist.create(
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+    )
+
+    Billboard.create(
+      top: tops.sample,
+      song_id: song.id,
+      artist_id: artist.id,
+    )
+  end
  end
+
+ puts "SEEEDED"
+ puts Song.all.size

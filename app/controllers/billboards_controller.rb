@@ -7,6 +7,8 @@ before_action :set_song
   end
 
   def new
+    @artist = Artist.all - @song.artists
+    @billboards = @song.billboards.new
   end
 
   private
