@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ tops = ['us_100', 'euro_100']
+
+ 10.times do 
+  song = Song.create(name: '')
+ end
