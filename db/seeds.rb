@@ -12,7 +12,7 @@
   song = Song.create(name: Faker::Music.album)
   
 
-  10.times do 
+
     artist = Artist.create(
       first_name: Faker::Name.first_name,
       last_name: Faker::Name.last_name,
@@ -23,7 +23,6 @@
       song_id: song.id,
       artist_id: artist.id,
     )
-  end
  end
 
  puts "SEEEDED"

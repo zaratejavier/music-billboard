@@ -1,11 +1,11 @@
 <h1>Add to Billboard</h1>
 
-<%= form_with(model: [@song, @billboard], local: :true, class: "ui form" ) do |f| %>
-  <%= f.label :artist %>
-  <%= f.select :artist_id, @artists.collect { |u| [u.full_name, u.id] } %>
-  <br />
-  <%= f.label :top %>
-  <%= f.select :top, ['us_100', 'euro_100'] %>
-  <br />
-  <%= f.submit nil, class: "ui green button inverted" %>
-<% end %>
+<%= form_with(model: [@song, @billboard], local: :true) do |f|%>
+  <%= f.label :artist%>
+  <%= f.select :artist_id, @artists.collect { |u| [u.full_name, u.id]}%>
+  <br/>
+  <%= f.label :top%>
+  <%= f.select :top, ['us_100','euro_100']%>
+  <br/>
+  <%= f.submit nil, class:'button'%>
+<%end%>
